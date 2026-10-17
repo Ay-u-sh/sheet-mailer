@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+      "target": "ES2019",
+      "module": "ESNext",
+      "moduleResolution": "bundler",
+      "jsx": "react-jsx",
+      "strict": true,
+      "types": ["google-apps-script"],
+      "skipLibCheck": true
+    },
+    "include": ["./**/*.ts", "vite.editor.config.mts", "editor/editor.tsx"]
+  }

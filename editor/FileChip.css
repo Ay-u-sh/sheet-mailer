@@ -1,0 +1,44 @@
+.file-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+  
+    height: 28px;
+    padding: 0 var(--space-2);
+  
+    color: #5f6368;
+    font-size: var(--font-size-caption);
+    line-height: var(--line-height-caption);
+  
+    border: 1px solid #dadce0;
+    border-radius: 14px;
+    background: #fff;
+  }
+  
+  .file-chip__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .file-chip__name {
+    max-width: 180px;
+  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .file-chip__remove {
+    width: 18px;
+    height: 18px;
+    padding: 0;
+  
+    color: #5f6368;
+    font-size: 16px;
+    line-height: 18px;
+  
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+  }

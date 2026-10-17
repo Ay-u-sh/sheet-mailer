@@ -1,0 +1,73 @@
+:root {
+   /* ─────────────────────────────────────────────
+      Spacing
+      Every spacing value follows a 4px rhythm.
+      ───────────────────────────────────────────── */
+ 
+   --space-0: 0;
+   --space-1: 4px;
+   --space-2: 8px;
+   --space-3: 12px;
+   --space-4: 16px;
+   --space-5: 20px;
+   --space-6: 24px;
+ 
+ 
+   /* ─────────────────────────────────────────────
+      Typography
+      Roboto gives the interface the familiar
+      Material Design character.
+      ───────────────────────────────────────────── */
+ 
+   --font-family: "Roboto", Arial, sans-serif;
+ 
+   --font-size-caption: 12px;
+   --font-size-body: 14px;
+   --font-size-subtitle: 16px;
+   --font-size-title: 20px;
+   --font-size-heading: 24px;
+ 
+ 
+   /* ─────────────────────────────────────────────
+      Typography weights
+      ───────────────────────────────────────────── */
+ 
+   --font-weight-regular: 400;
+   --font-weight-medium: 500;
+   --font-weight-bold: 700;
+ 
+ 
+   /* ─────────────────────────────────────────────
+      Typography line heights
+      ───────────────────────────────────────────── */
+ 
+   --line-height-caption: 16px;
+   --line-height-body: 16px;
+   --line-height-subtitle: 20px;
+   --line-height-title: 24px;
+   --line-height-heading: 28px;
+ }
+ 
+ 
+ * {
+   box-sizing: border-box;
+ }
+ 
+ 
+ html,
+ body,
+ #root {
+   width: 100%;
+   height: 100%;
+ 
+   margin: 0;
+   padding: 0;
+ }
+ 
+ 
+ body {
+   font-family: var(--font-family);
+   font-size: var(--font-size-body);
+   font-weight: var(--font-weight-regular);
+   line-height: var(--line-height-body);
+ }

@@ -1,0 +1,114 @@
+
+
+/* Footer: one row. Left = editing toolbar, right = preview/send.
+   Only the actions we actually support are permanent buttons;
+   everything else (schedule, send test) lives behind a menu. */
+
+   .toolbar {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+  }
+  
+  .toolbar__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 32px;
+    height: 32px;
+  
+    border: none;
+    border-radius: 4px;
+    background: transparent;
+    color: #5f6368;
+  
+    cursor: pointer;
+  }
+  
+  .toolbar__button:hover {
+    background: #f1f3f4;
+  }
+  
+  .toolbar__button:disabled {
+    color: #c7c9cc;
+    cursor: default;
+  }
+  
+  .toolbar__button:disabled:hover {
+    background: transparent;
+  }
+  
+  .toolbar__button--text {
+    font-family: var(--font-family);
+    font-size: var(--font-size-caption);
+    font-weight: var(--font-weight-medium);
+  }
+  
+  .toolbar__divider {
+    width: 1px;
+    height: 20px;
+    margin: 0 var(--space-1);
+  
+    background: #dadce0;
+  }
+  
+  /* Dropdown menu, shared by the {} variable menu, the ⋮ more menu,
+     and the caret on the split send button. */
+  
+  .toolbar-menu {
+    position: relative;
+  }
+  
+  .toolbar-menu__panel {
+    position: absolute;
+    z-index: 10;
+  
+    display: flex;
+    flex-direction: column;
+  
+    min-width: 160px;
+    max-height: 200px;
+    overflow-y: auto;
+  
+    padding: var(--space-1) 0;
+  
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    background: #ffffff;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 15%);
+  }
+  
+  .toolbar-menu__panel--left {
+    left: 0;
+  }
+  
+  .toolbar-menu__panel--right {
+    right: 0;
+  }
+  
+  .toolbar-menu__panel--up {
+    bottom: calc(100% + var(--space-1));
+  }
+  
+  .toolbar-menu__panel--down {
+    top: calc(100% + var(--space-1));
+  }
+  
+  .toolbar-menu__option {
+    padding: var(--space-2) var(--space-3);
+  
+    border: none;
+    background: transparent;
+    text-align: left;
+    color: #202124;
+  
+    font-family: var(--font-family);
+    font-size: var(--font-size-caption);
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  
+  .toolbar-menu__option:hover {
+    background: #f1f3f4;
+  }
