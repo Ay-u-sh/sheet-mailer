@@ -1,0 +1,27 @@
+{
+    "name": "sheet-mailer-backend",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "tsx watch src/app.ts",
+        "build": "tsc",
+        "start": "node dist/app.js"
+    },
+    "dependencies": {
+        "better-sqlite3": "^13.0.3",
+        "better-sqlite3-multiple-ciphers": "^13.0.3",
+        "cookie-parser": "^1.4.7",
+        "dotenv": "^16.4.7",
+        "express": "^5.1.0",
+        "googleapis": "^186.0.0"
+    },
+    "devDependencies": {
+        "@types/better-sqlite3": "^9.6.0",
+        "@types/cookie-parser": "^1.4.10",
+        "@types/express": "^5.0.3",
+        "@types/node": "^22.15.30",
+        "tsx": "^4.19.4",
+        "typescript": "^5.8.3"
+    }
+}
